@@ -1,0 +1,248 @@
+/* =============================== */
+/* FAQ MAIN SECTION                */
+/* =============================== */
+
+.faqSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.faqContainer {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTitle {
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 50px;
+    max-width: 561px;
+}
+
+.faqList {
+    width: 100%;
+    max-width: 1052px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faqItem {
+    width: 100%;
+}
+
+
+/* =============================== */
+/* QUESTION HEADER                 */
+/* =============================== */
+
+.questionHeader {
+    width: 100%;
+    height: 57px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.questionText {
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 23.47px;
+    line-height: 100%;
+    margin: 0;
+    max-width: 90%;
+}
+
+.arrowIconWrapper {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowIcon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+    transform: rotate(360deg);
+}
+
+
+/* =============================== */
+/* ANSWER BOX                      */
+/* =============================== */
+
+.answerBox {
+    width: 100%;
+    background: #F4F4F4;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-sizing: border-box;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 30px;
+    transition: 
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease;
+}
+
+.open {
+    max-height: 500px;
+    opacity: 1;
+    padding: 30px;
+}
+
+.answerText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15.64px;
+    line-height: 1.58;
+    text-align: justify;
+    color: #000000;
+    margin: 0;
+    max-width: 977px;
+}
+
+
+/* =============================== */
+/* RESPONSIVE BREAKPOINTS         */
+/* =============================== */
+
+/* 1100px */
+@media screen and (max-width: 1100px) {
+    .faqList {
+        max-width: 95%;
+    }
+}
+
+/* 900px - extra optimization */
+@media screen and (max-width: 900px) {
+    .questionHeader {
+        padding: 20px;
+        height: auto;
+    }
+
+    .questionText {
+        font-size: 20px;
+    }
+
+    .answerBox {
+        padding: 0 20px;
+    }
+}
+
+/* 768px (Tablet) */
+@media screen and (max-width: 768px) {
+    .sectionTitle {
+        font-size: 36px;
+        margin-bottom: 30px;
+        max-width: 90%;
+    }
+
+    .questionHeader {
+        min-height: 50px;
+        padding: 15px 20px;
+    }
+
+    .questionText {
+        font-size: 18px;
+        max-width: 85%;
+    }
+
+    .answerText {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .arrowIcon,
+    .arrowIconWrapper {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* 600px - Better small mobile handling */
+@media screen and (max-width: 600px) {
+
+    .sectionTitle {
+        font-size: 32px;
+    }
+
+    .faqList {
+        gap: 12px;
+    }
+
+    .questionHeader {
+        padding: 15px;
+    }
+
+    .questionText {
+        font-size: 17px;
+    }
+
+    .answerBox {
+        padding: 0 15px;
+    }
+
+    .open {
+        padding: 20px 15px;
+    }
+}
+
+/* 500px - tight layout */
+@media screen and (max-width: 500px) {
+
+    .sectionTitle {
+        font-size: 28px;
+    }
+
+    .questionText {
+        font-size: 16px;
+    }
+
+    .answerBox {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .answerText {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* 400px - very small screens */
+@media screen and (max-width: 400px) {
+    .questionHeader {
+        padding: 12px;
+    }
+
+    .questionText {
+        font-size: 15px;
+    }
+
+    .arrowIcon {
+        width: 16px;
+        height: 16px;
+    }
+}

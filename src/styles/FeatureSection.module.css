@@ -1,0 +1,303 @@
+.featureSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.featureContainer {
+  width: 100%;
+  max-width: 1237px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.whyChooseLabel {
+  width: 153px;
+  height: 41px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.yellowDot {
+  width: 8px;
+  height: 8px;
+  background-color: #ffea28;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.whyChooseText {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.sectionTitle {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 871px;
+}
+
+.contentLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.cardColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 452px;
+  width: 100%;
+}
+
+.centerSection {
+  position: relative;
+  width: 306px;
+  height: 378px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.yellowBackgroundBox {
+  z-index: 1;
+  background: linear-gradient(#fffac9 0%, #fff26a 100%);
+  border-radius: 25px;
+  width: 280px;
+  height: 351px;
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imageWrapper {
+  z-index: 2;
+  border-radius: 25px;
+  width: 306px;
+  height: 392px;
+  bottom: -42px;
+  position: relative;
+}
+
+.mainImage {
+  object-fit: cover;
+  object-position: center bottom;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.35) translateY(-102px);
+}
+
+.featureCard {
+  width: 100%;
+  height: 160px;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  border: 1px solid #dadada;
+  padding: 20px 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardIcon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.svgIconStyle {
+  width: 38.5px;
+  height: 46px;
+}
+
+.cardTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.26;
+  color: #515151;
+  text-transform: capitalize;
+  max-width: 334px;
+}
+
+.cardDescription {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.68;
+  color: #4B4B4B;
+  max-width: 407px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contentLayout {
+    gap: 10px;
+  }
+
+  .cardColumn {
+    max-width: 45%;
+  }
+
+  .centerSection {
+    width: 250px;
+    height: 320px;
+  }
+
+  .yellowBackgroundBox {
+    width: 230px;
+    height: 290px;
+    bottom: 27px;
+  }
+
+  .imageWrapper {
+    width: 250px;
+    height: 320px;
+    bottom: -42px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .sectionTitle {
+    font-size: 34px;
+    margin-bottom: 25px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contentLayout {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .centerSection {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yellowBackgroundBox {
+    width: 85%;
+    max-width: 260px;
+    height: 330px;
+    bottom: 0;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    bottom: 0;
+  }
+
+  .mainImage {
+    transform: scale(1.05) translateY(0px);
+  }
+
+  .cardColumn {
+    width: 100%;
+    max-width: 600px;
+    gap: 25px;
+  }
+
+  .featureCard {
+    height: auto;
+    padding: 18px 20px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardDescription {
+    font-size: 14px;
+    padding-left: 60px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .whyChooseLabel {
+    margin-bottom: 8px;
+  }
+
+  .contentLayout {
+    gap: 40px;
+  }
+
+  .centerSection {
+    max-width: 280px;
+  }
+
+  .yellowBackgroundBox {
+    width: 85%;
+    max-width: 240px;
+    height: 300px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 270px;
+    height: 330px;
+  }
+
+  .mainImage {
+    transform: scale(1.02) translateY(0px);
+  }
+
+  .cardColumn {
+    gap: 18px;
+  }
+
+  .cardIcon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardDescription {
+    font-size: 13px;
+    padding-left: 50px;
+  }
+}

@@ -1,0 +1,271 @@
+.footerSection {
+  background-color: #0071bc;
+  color: #ffffff;
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.footerMainContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.waveContour {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Contour.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 1;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+
+.sectionTitle {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+  white-space: nowrap;
+}
+
+.logoSection {
+  max-width: 300px;
+}
+
+.logoHexagonBg {
+  width: 208px;
+  height: 156px;
+  background-color: #ffffff;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logoText {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.aboutText {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.followUsText {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 29.16px;
+  margin-top: 25px;
+  position: relative;
+  right: 10px;
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.linkText {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.linkText:hover {
+  color: #ffd812;
+}
+
+.contactSection {
+  max-width: 350px;
+}
+
+.contactItem {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.contactIcon {
+  font-size: 20px;
+  color: #ffd812;
+  flex-shrink: 0;
+}
+
+.contactText,
+.contactLink {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0;
+  text-decoration: none;
+}
+
+.copyrightBar {
+  background-color: #fff;
+  width: 75%;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 50px;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyrightContent {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #333333;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 1198px;
+}
+
+/* =========================== TABLET =========================== */
+@media (max-width: 1024px) {
+  .footerWrapper {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+  }
+
+  .logoSection {
+    width: 100%;
+    max-width: none;
+  }
+
+  .quickLinkSection,
+  .academicsSection,
+  .contactSection {
+    flex: 1 1 45%;
+    min-width: 250px;
+  }
+}
+
+/* =========================== MOBILE =========================== */
+@media (max-width: 600px) {
+  .footerMainContent {
+    padding: 0 20px;
+  }
+
+  .footerWrapper {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .sectionTitle {
+    font-size: 26px;
+  }
+
+  .logoHexagonBg {
+    width: 180px;
+    height: 140px;
+  }
+
+  .logoText {
+    font-size: 38px;
+  }
+
+  .contactItem {
+    gap: 10px;
+  }
+
+  .linkText {
+    font-size: 15px;
+  }
+
+  .contactText {
+    font-size: 14px;
+  }
+
+  .socialIcons {
+    gap: 20px;
+    right: 0;
+  }
+
+  .copyrightBar {
+    clip-path: none;
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+    padding: 12px 0;
+  }
+}
+
+/* =========================== EXTRA SMALL =========================== */
+@media (max-width: 420px) {
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .logoText {
+    font-size: 30px;
+  }
+
+  .linkText {
+    font-size: 14px;
+  }
+
+  .contactText {
+    font-size: 13px;
+  }
+
+  .socialIcon {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+}

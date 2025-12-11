@@ -1,0 +1,154 @@
+
+
+.jobSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px; 
+  padding-bottom: 80px;
+}
+
+
+.sectionTitle {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #000000;
+  max-width: 871px; 
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 20px 0;
+}
+
+
+
+.cardsContainer {
+  display: flex;
+  gap: 40px; 
+  max-width: 1100px; 
+  width: 90%;
+  justify-content: center;
+}
+
+.jobCard {
+  width: 523px;
+  height: 243px; 
+  padding: 30px 40px;
+  background-color: #f5f5f5; 
+  border-radius: 25px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6875; 
+  text-align: justify;
+  color: #000000;
+
+  margin-bottom: 25px;
+}
+
+
+
+.applyBtn {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 164px;          
+  height: 47px;           
+
+  background-color: #FFEC22; 
+  color: #000;               
+  border: 1.12px solid #E5E5E5;
+  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50px; 
+  padding: 0 4px 0 20px; 
+  transition: opacity 0.3s;
+  position: relative;
+  overflow: hidden; 
+}
+
+.applyBtn:hover {
+  opacity: 0.9;
+}
+
+.btnIconWrapper {
+    width: 39px; 
+    height: 39px; 
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; 
+    font-weight: 900;
+    color: #000;
+    
+    position: absolute;
+    right: 4px; 
+    top: 4px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .cardsContainer {
+    gap: 20px;
+    max-width: 95%;
+  }
+
+  .jobCard {
+    width: 48%;
+    padding: 25px;
+    height: auto; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 36px;
+    margin-bottom: 30px;
+    max-width: 90%;
+  }
+  
+  .cardsContainer {
+    flex-direction: column; 
+    gap: 20px;
+    width: 90%;
+  }
+
+  .jobCard {
+    width: 100%; 
+    height: auto;
+  }
+
+  .cardTitle {
+    font-size: 26px;
+  }
+  
+  .cardDescription {
+    font-size: 15px;
+  }
+}

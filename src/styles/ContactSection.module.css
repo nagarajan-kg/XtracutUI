@@ -1,0 +1,176 @@
+
+
+.contactSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px; 
+    max-width: 1235px;
+    height: 529px; 
+    margin: 50px auto; 
+    background: linear-gradient(270deg, #0066A9 0%, #003C65 100%);
+    border-radius: 20px;
+    align-items: center; 
+}
+
+.contactContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; 
+}
+
+
+
+.sectionTitle {
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    max-width: 985px;
+}
+
+
+
+.contactForm {
+    width: 100%;
+    max-width: 1100px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.inputRow {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.inputBox {
+    width: 538px;
+    max-width: 100%;
+    height: 64px;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF; 
+    background: #FFFFFF;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    padding: 0 30px; 
+    
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.5); 
+    }
+}
+
+
+
+.sendButtonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+.sendButton {
+    width: 172px;
+    height: 47px;
+    border-radius: 30px;
+    background: #FFEC22; 
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.sendButton:hover {
+    background: #FFD812;
+    transform: translateY(-1px);
+}
+
+.sendButtonText {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2; 
+    letter-spacing: -0.02em; 
+    color: #000000;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .contactSection {
+        max-width: 95%; 
+        height: auto; 
+        padding: 50px 20px; 
+    }
+    .inputBox {
+        width: 45%; 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactSection {
+        border-radius: 0; 
+    }
+    
+    .sectionTitle {
+        font-size: 36px;
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+    
+    .inputRow {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    
+    .inputBox {
+        width: 100%;
+        max-width: 450px; 
+        margin: 0 auto;
+    }
+    
+    .sendButtonWrapper {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contactSection {
+        padding: 40px 10px;
+    }
+    
+    .sectionTitle {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    
+    .inputBox {
+        height: 55px;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    
+    .sendButton {
+        width: 150px;
+        height: 45px;
+    }
+    
+    .sendButtonText {
+        font-size: 14px;
+    }
+}

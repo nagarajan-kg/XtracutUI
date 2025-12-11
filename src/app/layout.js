@@ -1,15 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
+import HeroSection from "@/components/HeroSection";
+import JoinSection from "@/components/JoinSection";
+import JobSection from "@/components/JobSection";
+import FeatureSection from "@/components/FeatureSection";
+import AwardsSection from "@/components/AwardsSection";
+import ContactSection from "@/components/ContactSection";
+import FAQSection from "@/components/FAQSection";
+import OurFacilitySection from "@/components/OurFacilitySection";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import ApplyNowSection from "@/components/ApplyNowSection";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -19,9 +23,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body>
+        <Navbar />
+        <HeroSection />
+        <JoinSection />
+        <JobSection />
+        <FeatureSection />
+        <AwardsSection />
+        <ContactSection />
+        <FAQSection />
+        <OurFacilitySection />
+        <ApplyNowSection />
+        <Footer />
+        {/* {children} */}
       </body>
     </html>
   );
 }
+
+

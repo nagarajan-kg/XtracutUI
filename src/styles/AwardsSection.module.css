@@ -1,0 +1,213 @@
+
+
+.outerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+.yellowBackground {
+  width: 100%;
+  background-color: #FFF4B1;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.contentBox {
+  width: 100%;
+  max-width: 1236px;
+  min-height: 604px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  position: relative;
+}
+
+.tabNavigation {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.navArrow {
+  color: #000000;
+  /* opacity: .5; */
+  /* font-weight: 700; */
+  width: 2.06px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 2.5rem;
+  transition: opacity 0.3s;
+}
+
+.leftArrow {
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+.tabItem {
+  background: none;
+  border: none;
+  color: #555;
+  font-family: "Marcellus", serif;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 15px 30px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.activeTab {
+  background-color: #0071bc; 
+  color: #fff;
+  border-radius: 30px;
+  height: 57px;
+  padding: 15px 40px;
+  font-size: 20px;
+  margin: 0 10px;
+  box-shadow: 0 4px 10px rgba(0, 113, 188, 0.4);
+}
+
+
+.contentTitle {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+
+.awardsListContainer {
+  max-height: 408px;
+  overflow-y: auto; 
+  padding: 0 15px 20px 30px;
+}
+
+.awardsList {
+  list-style: decimal; 
+  padding-left: 20px;
+  margin: 0;
+}
+
+
+.awardItem {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.813;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+
+.awardsListContainer::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+.awardsListContainer::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.awardsListContainer::-webkit-scrollbar-thumb {
+  background-color: #ffd812; 
+  border-radius: 10px;
+  min-height: 20px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .contentBox {
+    min-height: auto;
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .tabNavigation {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .tabItem {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  .activeTab {
+    height: 50px;
+    padding: 10px 25px;
+    font-size: 18px;
+  }
+
+  .contentTitle {
+    font-size: 26px;
+    padding-left: 20px;
+  }
+
+  .awardsListContainer {
+    max-height: 350px;
+    padding: 0 15px 20px 20px;
+  }
+
+  .awardItem {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .yellowBackground {
+    padding: 30px 10px;
+  }
+
+  .contentBox {
+    padding: 20px;
+  }
+
+  .tabItem {
+    font-size: 16px;
+  }
+
+  .activeTab {
+    font-size: 14px;
+    padding: 8px 12px;
+    height: 40px;
+  }
+
+  .contentTitle {
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  .awardsListContainer {
+    max-height: 300px;
+    padding: 0 10px 10px 10px;
+  }
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    width: 50px !important;
+}

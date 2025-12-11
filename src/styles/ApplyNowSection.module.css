@@ -1,0 +1,151 @@
+.applySectionFullWidth {
+    width: 100%;
+    max-width: 1241px;
+    height: 298px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #FFD812;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.3s ease;
+}
+
+.applyContentWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.textContainer {
+    max-width: 750px;
+}
+
+.mainHeading {
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #333333;
+    margin: 0 0 20px 0;
+}
+
+.descriptionText {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    text-transform: capitalize;
+    color: #333333;
+    margin: 0;
+    max-width: 631px;
+}
+
+.applyNowButton {
+    background-color: #FFFFFF;
+    color: #333333;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.1s;
+    white-space: nowrap;
+}
+
+.applyNowButton:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1280px) {
+    .applySectionFullWidth {
+        margin: 50px 20px;
+    }
+
+    .applyContentWrapper {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .applySectionFullWidth {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    .applyContentWrapper {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    .textContainer {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .mainHeading {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    .descriptionText {
+        max-width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .applyNowButton {
+        width: 80%;
+        max-width: 300px;
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainHeading {
+        font-size: 30px;
+    }
+
+    .descriptionText {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .applyNowButton {
+        width: 90%;
+        padding: 14px 25px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .applySectionFullWidth {
+        padding: 30px 15px;
+    }
+
+    .mainHeading {
+        font-size: 26px;
+    }
+
+    .descriptionText {
+        font-size: 13px;
+    }
+
+    .applyNowButton {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}

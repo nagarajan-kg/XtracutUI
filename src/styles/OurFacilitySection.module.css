@@ -1,0 +1,216 @@
+
+.facilitySectionFullWidth {
+  width: 100%;
+  min-height: 761px;
+  padding: 80px 0 100px 0;
+  background: linear-gradient(270deg, #0066a9 0%, #003c65 100%);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.facilityContentWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.headerContainer {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+.facilityLabelContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.facilityLabelBox {
+  /* width: 145; height: 41; border-radius: 20px; */
+  width: 145px;
+  height: 41px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-left: 10px;
+  position: relative;
+}
+
+.facilityLabelBox::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+}
+
+.facilityLabelText {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #333333;
+  margin: 0;
+  /* padding-left: 10px; */
+}
+
+
+.facilityMainHeading {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .facilityMainHeading {
+    font-size: 32px;
+    max-width: 90%;
+  }
+}
+
+.swiperNavigationCustomContainer {
+  position: absolute;
+  top: 150%;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 15px;
+}
+
+.arrowIcon {
+  width: 43px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s, opacity 0.2s, border-color 0.2s;
+}
+
+.swiperButtonNextCustom {
+  background-color: #ffd812;
+  border-color: #ff8c00;
+  color: #003c65;
+}
+
+:global(.swiper-button-disabled) {
+  /* opacity: 0.3 !important; */
+  cursor: not-allowed !important;
+  background: white;
+  color: black;
+  cursor: not-allowed !important;
+}
+
+@media (max-width: 1024px) {
+  .swiperNavigationCustomContainer {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .facilityContentWrapper {
+    padding: 0 20px;
+  }
+}
+
+.facilitySliderWrapper {
+  padding-top: 50px;
+  left: 40px;
+  position: relative;
+}
+
+.facilitySwiper {
+  width: 100%;
+  padding: 0;
+}
+
+.facilityCard {
+  /* width: 313; height: 335; border-radius: 15px; border: 2px solid #FFD812 */
+  height: 335px;
+  border-radius: 15px;
+  overflow: hidden;
+  /* border: 2px solid #FFD812;  */
+  box-sizing: border-box;
+}
+
+.facilityImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.facilityCard:hover .facilityImage {
+  transform: scale(1.05);
+}
+
+
+.facilityCardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 0 0 15px 15px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+.titleLine {
+  height: 1px;
+  background-color: #ff8c00; 
+  width: 30px; 
+  margin: 0 10px; 
+}
+
+.facilityCardTitle {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap; 
+}
+
+.facilityCardUnderline {
+  display: none;
+}
